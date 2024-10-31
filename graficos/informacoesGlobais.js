@@ -7,7 +7,7 @@ async function visualizarInformacoesGlobais (){
 
     const paragrafo = document.createElement("p");
     paragrafo.classList.add("graficos-container__texto");
-    paragrafo.innerHTML = `Você sabia que o mundo tem ${dados.total_pessoas_mundo} de pessoas no mundo?.`;
+    paragrafo.innerHTML = `Você sabia que o mundo tem <span> ${dados.total_pessoas_mundo} </span> de pessoas no mundo?.`;
     
     const container = document.getElementById('graficos-container');
     container.appendChild(paragrafo);
